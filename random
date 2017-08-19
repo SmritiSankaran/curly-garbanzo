@@ -1,0 +1,20 @@
+import random
+import pygame
+pygame.init()
+w = pygame.display.set_mode([500,500])
+w.fill((125,250,180))
+playing = True
+while playing:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            playing = False
+    r = random.randint(0,255)
+    g = random.randint(0,255)
+    b = random.randint(0,255)
+    color = (r,g,b)
+    w.fill(color)
+    
+    pygame.display.flip()
+    pygame.time.wait(100)
+num = random.randint(0,500)
+print(num)

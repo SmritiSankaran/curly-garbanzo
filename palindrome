@@ -1,0 +1,3 @@
+from restriction import *
+
+palindrome()  

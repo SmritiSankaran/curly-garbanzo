@@ -1,0 +1,19 @@
+seq = "ATGAAATACGTA"
+print(seq)
+a = 0
+t = 0
+c = 0
+g = 0
+for each in seq:
+     if each == "A":
+          a += 1
+     if each == "T":
+          t += 1
+     if each == "C":
+          c += 1
+     if each == "G":   
+          g += 1
+print "As: ", a
+print "Ts: ", t
+print "Cs: ", c
+print "Gs: ", g

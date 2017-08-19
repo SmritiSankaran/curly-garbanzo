@@ -1,0 +1,14 @@
+d = {}
+f = open("/share/data/login.txt")
+lines = f.readlines()
+for line in lines:
+	parts = line.split()
+	for x in parts:
+		d[parts[0]] = parts[1]
+u = raw_input("Username:")
+x  = d[u]
+p = raw_input("Password:")
+if p == x:
+	print ("Welcome to the program!") 
+else:
+	print ("You're username or password was incorrect")

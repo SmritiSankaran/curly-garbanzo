@@ -1,0 +1,14 @@
+pattern = "GAATTC"
+seq = open("/share/data/genomes/Ecoli-genome/MG1655-K12.fasta")
+lines = seq.readlines()
+d = {}
+for line in lines:
+	parts = line.split()
+	for x in parts:
+		d[parts[0]] = parts[1]
+for y in seq:
+	if y == "GAATTC":
+		del y
+		print seq
+	else:
+		print seq

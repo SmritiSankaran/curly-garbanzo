@@ -1,0 +1,23 @@
+lines = f.readlines()
+d = {}
+for line in lines:
+	parts = line.split()
+	for x in parts:
+		print(x)
+                if (len(parts)- 1) == 1:
+                       	d[parts[0]] = parts[1]
+                if (len(parts) - 1) == 2:
+                        d[parts[0]] = parts[1],parts[2]
+print d
+f = open("/share/data/adh/ALDH.txt")
+d = {}
+for line in lines:
+        parts = line.split()
+        for x in parts:
+                print(x)
+                if (len(parts)- 1) == 1:
+                        d[parts[0]] = parts[1]
+                if (len(parts) - 1) == 2:
+                        d[parts[0]] = parts[1],parts[2]
+
+
